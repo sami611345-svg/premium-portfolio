@@ -52,39 +52,25 @@ const NAV_ITEMS = [
 
 const SKILL_PILLS = [
   "Python",
-  "Java",
-  "C/C++",
-  "SQL",
-  "Dart",
-  "Flask",
-  "Flutter",
-  "Deep Learning",
-  "Computer Vision",
-  "Recommender Systems",
-  "LLMs / GenAI",
-  "YOLO",
-  "Semantic Segmentation",
-  "PyTorch",
-  "TensorFlow",
-  "Keras",
-  "OpenCV",
-  "NumPy",
-  "Pandas",
-  "Blender",
-  "FastAPI",
-  "Docker",
-  "Google Cloud",
-  "GPU Computing",
-  "React.js",
-  "JavaScript",
-  "HTML5",
-  "CSS3",
-  "Tailwind CSS",
-  "Agentic AI",
-  "CI/CD",
+  "Django",
+  "Django REST Framework",
   "REST APIs",
-  "LangChain",
-  "Hugging Face",
+  "API Design",
+  "JWT Authentication",
+  "RBAC",
+  "PostgreSQL",
+  "Database Design",
+  "SQL",
+  "Docker",
+  "Gunicorn",
+  "NGINX",
+  "AWS EC2",
+  "DigitalOcean",
+  "Linux",
+  "System Design",
+  "CI/CD",
+  "Git",
+  "GitHub",
 ] as const;
 
 const CHAPTER_TARGETS = [
@@ -528,7 +514,7 @@ export default function Home() {
           </ul>
 
           <a
-            href="/assets/Jonathan_Resume.pdf"
+            href="/assets/Abdus_Sami_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-resume"
@@ -590,7 +576,7 @@ export default function Home() {
         ))}
 
         <a
-          href="/assets/Jonathan_Resume.pdf"
+          href="/assets/Abdus_Sami_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setIsMenuOpen(false)}

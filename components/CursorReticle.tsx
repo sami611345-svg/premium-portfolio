@@ -51,7 +51,7 @@ function resolveTarget(from: Element): Match | null {
     consider(card, label, confidenceFor(card.getAttribute("data-project-id") || label));
   }
   consider(from.closest(".gravity-pit"), "DRAG", "0.88");
-  consider(from.closest('a[href*="Jonathan_Resume"]'), "RESUME", "1.00");
+  consider(from.closest('a[href*="Abdus_Sami_Resume"]'), "RESUME", "1.00");
   /* data-cursor-ignore opts a control out of the generic matcher — used for
      large zone-like triggers (the card image's lightbox role="button") that
      should read as their labelled ancestor, not as a LINK. */

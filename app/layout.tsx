@@ -12,7 +12,9 @@ import "./evolution.css";
 
 // Absolute-URL base for canonical links, OG/Twitter images, and the sitemap.
 // Env var wins on Vercel previews; falls back to the production domain.
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://jonathanjesni.com";
+const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://abdussami.dev";
+// Ensure an absolute URL: prepend https:// if the env var omits the protocol.
+const SITE_URL = /^https?:\/\//i.test(RAW_SITE_URL) ? RAW_SITE_URL : `https://${RAW_SITE_URL}`;
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -40,35 +42,35 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/" },
-  title: "Jonathan Jesni: AI & Systems Developer",
+  title: "Abdus Sami: Cloud Native Backend Engineer",
   description:
-    "Jonathan Jesni's developer portfolio: AI/ML tools, computer vision, and real-world software engineering.",
+    "Abdus Sami's portfolio: secure, scalable backend systems with Django, DRF, PostgreSQL, Docker, and AWS.",
   keywords: [
-    "Jonathan Jesni",
-    "AI developer",
-    "systems developer",
-    "frontend engineer",
-    "machine learning portfolio",
-    "deep learning",
-    "recommendation systems",
-    "computer vision",
-    "document processing",
-    "Next.js portfolio",
+    "Abdus Sami",
+    "backend engineer",
+    "Django developer",
+    "Django REST Framework",
+    "PostgreSQL",
+    "REST API developer",
+    "Docker",
+    "AWS EC2",
+    "cloud native backend",
+    "Python developer",
   ],
   openGraph: {
-    title: "Jonathan Jesni: AI & Systems Developer",
+    title: "Abdus Sami: Cloud Native Backend Engineer",
     description:
-      "Jonathan Jesni's developer portfolio: AI/ML tools, computer vision, and real-world software engineering.",
+      "Abdus Sami's portfolio: secure, scalable backend systems with Django, DRF, PostgreSQL, Docker, and AWS.",
     type: "website",
     url: "/",
-    siteName: "Jonathan Jesni",
+    siteName: "Abdus Sami",
     // og:image is injected automatically by app/opengraph-image.jpeg
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jonathan Jesni: AI & Systems Developer",
+    title: "Abdus Sami: Cloud Native Backend Engineer",
     description:
-      "AI/ML tools, computer vision, and real-world software engineering projects by Jonathan Jesni.",
+      "Secure, scalable backend systems with Django, DRF, PostgreSQL, Docker, and AWS by Abdus Sami.",
     // twitter:image is injected automatically by app/twitter-image.jpeg
   },
 };
@@ -123,17 +125,15 @@ if (!location.hash) window.scrollTo(0, 0);`}
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Jonathan Jesni",
+              name: "Abdus Sami",
               url: SITE_URL,
-              jobTitle: "AI & Systems Developer",
+              jobTitle: "Cloud Native Backend Engineer",
               alumniOf: {
                 "@type": "CollegeOrUniversity",
-                name: "Indian Institute of Information Technology, Pune",
+                name: "Daffodil International University",
               },
-              sameAs: [
-                "https://github.com/Jonathan-Jesni",
-                "https://www.linkedin.com/in/jonathan-jesni/",
-              ],
+              email: "mailto:hsami3508@gmail.com",
+              telephone: "+8801315186694",
             }),
           }}
         />
