@@ -508,9 +508,8 @@ export default function HeroSection({
               <h1
                 className="hero-name-split"
                 aria-label="Abdus Sami"
-                style={{ flexDirection: "column" }}
               >
-                <div className="hero-name-mask" style={{ overflow: "hidden" }}>
+                <div className="hero-name-mask" style={{ overflow: "hidden", display: "inline-flex" }}>
                   <span
                     ref={topGroupRef}
                     className="hero-char-group name-part-1"
@@ -528,7 +527,7 @@ export default function HeroSection({
                     ))}
                   </span>
                 </div>
-                <div className="hero-name-mask" style={{ overflow: "hidden" }}>
+                <div className="hero-name-mask" style={{ overflow: "hidden", display: "inline-flex", marginLeft: "12px" }}>
                   <span
                     ref={bottomGroupRef}
                     className="hero-char-group name-part-2"
