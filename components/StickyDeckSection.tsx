@@ -20,11 +20,9 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 /* ─── Accent hues per project ─────────────────────────────────────── */
 const CARD_HUES: Record<string, string> = {
-  "neuro-genesis":  "188, 45%, 52%",  /* cyan  (01) */
-  "double-unet":    "38, 56%, 52%",   /* gold  (02) */
-  bandwidth:        "209, 34%, 64%",  /* blue  (03) */
-  synthrescue:      "44, 60%, 56%",   /* gold  (04) */
-  ludex:            "214, 30%, 62%",  /* blue  (05) */
+  "ecommerce-backend":  "38, 56%, 52%",   /* gold  (01) */
+  "fundraising-system": "209, 34%, 64%",  /* blue  (02) */
+  "greenery-cms":       "44, 60%, 56%",   /* gold  (03) */
 };
 
 const N = FEATURED_PROJECTS.length;

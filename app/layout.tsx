@@ -12,7 +12,9 @@ import "./evolution.css";
 
 // Absolute-URL base for canonical links, OG/Twitter images, and the sitemap.
 // Env var wins on Vercel previews; falls back to the production domain.
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://abdussami.dev";
+const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://abdussami.dev";
+// Ensure an absolute URL: prepend https:// if the env var omits the protocol.
+const SITE_URL = /^https?:\/\//i.test(RAW_SITE_URL) ? RAW_SITE_URL : `https://${RAW_SITE_URL}`;
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
