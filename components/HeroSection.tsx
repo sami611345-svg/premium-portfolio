@@ -12,7 +12,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { LinkedInIcon } from "./ui/icons";
+import { MailIcon } from "./ui/icons";
 import { TerminalHighlight } from "./ui/TerminalHighlight";
 import { CircuitUnderline } from "./ui/CircuitUnderline";
 import { HoverScrambleText } from "./ui/HoverScrambleText";
@@ -32,8 +32,8 @@ const InteractiveModel = dynamic(() => import("./InteractiveModel"), { ssr: fals
 /* Each name renders as its own masked line: per-char spans keep the
    magnetic repulsion alive while the line-level span is what the
    opposing entrance + scroll-out parallax translate. */
-const FIRST_NAME = ["J", "o", "n", "a", "t", "h", "a", "n"];
-const LAST_NAME = ["J", "e", "s", "n", "i"];
+const FIRST_NAME = ["A", "b", "d", "u", "s"];
+const LAST_NAME = ["S", "a", "m", "i"];
 
 interface HeroSectionProps {
   animate?: boolean;
@@ -507,7 +507,7 @@ export default function HeroSection({
                   mask. The masks release after the intro lands. */}
               <h1
                 className="hero-name-split"
-                aria-label="Jonathan Jesni"
+                aria-label="Abdus Sami"
                 style={{ flexDirection: "column" }}
               >
                 <div className="hero-name-mask" style={{ overflow: "hidden" }}>
@@ -550,11 +550,11 @@ export default function HeroSection({
 
               <div ref={subContentRef} className="hero-sub-content">
                 <h2 className="hero-tagline">
-                  I engineer <TerminalHighlight delay={1.1} color="#C9A852" animate={animate}>self-modifying models</TerminalHighlight>, <TerminalHighlight delay={1.35} color="#C9A852" animate={animate}>computer vision pipelines</TerminalHighlight>, and <TerminalHighlight delay={1.6} color="#8FA8C4" animate={animate}>multi-agent infrastructure</TerminalHighlight> <em>from training through deployment</em>.
+                  I build <TerminalHighlight delay={1.1} color="#C9A852" animate={animate}>secure REST APIs</TerminalHighlight>, <TerminalHighlight delay={1.35} color="#C9A852" animate={animate}>PostgreSQL data models</TerminalHighlight>, and <TerminalHighlight delay={1.6} color="#8FA8C4" animate={animate}>cloud-native backend systems</TerminalHighlight> <em>from schema to deployment</em>.
                 </h2>
 
                 <p className="hero-sub">
-                  Final-year CS at IIIT Pune, Class of 2027. Open to <CircuitUnderline delay={1.85} color="#C9A852" animate={animate}>junior AI/ML roles</CircuitUnderline> and <TerminalHighlight delay={2.1} color="#8FA8C4" animate={animate}>internships</TerminalHighlight>.
+                  Cloud Native Backend Engineer working with <CircuitUnderline delay={1.85} color="#C9A852" animate={animate}>Django & DRF</CircuitUnderline> on <TerminalHighlight delay={2.1} color="#8FA8C4" animate={animate}>Docker, AWS & DigitalOcean</TerminalHighlight>.
                 </p>
 
                 <div className="hero-buttons">
@@ -583,17 +583,15 @@ export default function HeroSection({
                     <HoverScrambleText text="Explore featured work" />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/jonathan-jesni/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:hsami3508@gmail.com"
                     className="btn btn-outline"
-                    id="hero-linkedin-btn"
+                    id="hero-email-btn"
                   >
-                    <LinkedInIcon size={16} />
-                    <HoverScrambleText text="Connect on LinkedIn" />
+                    <MailIcon size={16} />
+                    <HoverScrambleText text="Email me" />
                   </a>
                   <a
-                    href="/assets/Jonathan_Resume.pdf"
+                    href="/assets/Abdus_Sami_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline"
@@ -610,7 +608,7 @@ export default function HeroSection({
                 <div className="hero-laptop-poster__lid">
                   <div className="hero-laptop-poster__screen">
                     <Image
-                      src="/assets/Neuro-genesis/title-card.jpg"
+                      src="/assets/projects/hero-title-card.png"
                       alt=""
                       fill
                       sizes="(min-width: 900px) 42vw, 82vw"

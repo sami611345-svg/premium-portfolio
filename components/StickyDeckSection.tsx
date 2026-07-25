@@ -1168,6 +1168,7 @@ export default function StickyDeckSection({
         </div>
       </div>
 
+      {SECONDARY_PROJECTS.length > 0 && (
       <div className="more-work">
         <div className="container">
           <header className="more-work-header">
@@ -1294,6 +1295,7 @@ export default function StickyDeckSection({
           </div>
         </div>
       </div>
+      )}
 
       {/* ── Outro / CTA — boundary 0 starts when this block's bottom edge
              crosses the viewport center. The remaining outro runway carries
@@ -1301,15 +1303,13 @@ export default function StickyDeckSection({
              the top. ── */}
       <div className="sd-outro">
         <div className="container sd-cta">
-          <p>There&apos;s more on GitHub.</p>
+          <p>Have a backend or API project in mind?</p>
           <a
-            href="https://github.com/Jonathan-Jesni?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="btn btn-outline"
             id="projects-cta-btn"
           >
-            <HoverScrambleText text="View all repositories" />
+            <HoverScrambleText text="Get in touch" />
           </a>
         </div>
       </div>

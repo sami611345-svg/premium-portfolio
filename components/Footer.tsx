@@ -72,21 +72,21 @@ export default function Footer() {
     <footer className="site-footer" id="footer">
       <div className="footer-row">
         <button type="button" className="footer-logo" onClick={backToTop} aria-label="Back to top">
-          <span className="bracket">&#123;</span>J<span className="bracket">&#125;</span>
+          <span className="bracket">&#123;</span>A<span className="bracket">&#125;</span>
         </button>
 
         <span className="footer-status">
           <span className="footer-dot" aria-hidden="true" />
-          open to Junior AI/ML roles &amp; internships · Class of 2027
+          available for backend engineering roles &amp; freelance work
         </span>
 
         <span className="footer-stack">
-          <HoverScrambleText text="Next.js · Three.js · GSAP · R3F" />
+          <HoverScrambleText text="Django · DRF · PostgreSQL · Docker · AWS" />
         </span>
       </div>
 
       <div className="footer-sub">
-        <span>© 2026 Jonathan Jesni</span>
+        <span>© 2026 Abdus Sami</span>
         <LocalClock />
       </div>
     </footer>

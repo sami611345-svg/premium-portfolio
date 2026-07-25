@@ -6,7 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { RollingHeadline } from "./ui/RollingHeadline";
 import { HoverScrambleText } from "./ui/HoverScrambleText";
-import { GitHubIcon, LinkedInIcon, MailIcon, DownloadIcon } from "./ui/icons";
+import { PhoneIcon, MailIcon, DownloadIcon } from "./ui/icons";
 import { burnControls } from "../lib/burnControls";
 import { MOTION_FAILED_EVENT } from "../lib/motionEvents";
 import {
@@ -207,9 +207,10 @@ export default function ContactSection({ animate = true }: ContactSectionProps) 
 
           {/* Sub-copy */}
           <p className="contact-text">
-            I&apos;m actively looking for internships and opportunities to build
-            impactful systems. Whether you have a question, a project idea, or
-            just want to connect, my inbox is open.
+            I&apos;m available for backend engineering roles and freelance
+            projects, building secure, scalable APIs and cloud-native systems.
+            Whether you have a question, a project idea, or just want to
+            connect, my inbox is open.
           </p>
 
           {/* Button grid — sequentially revealed by the secondary GSAP tween */}
@@ -224,7 +225,7 @@ export default function ContactSection({ animate = true }: ContactSectionProps) 
             }}
           >
             <a
-              href="mailto:jonathan.jesni.m@gmail.com"
+              href="mailto:hsami3508@gmail.com"
               className="contact-link"
               id="contact-email-btn"
             >
@@ -233,29 +234,16 @@ export default function ContactSection({ animate = true }: ContactSectionProps) 
             </a>
 
             <a
-              href="https://github.com/Jonathan-Jesni?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+8801315186694"
               className="contact-link"
-              id="contact-projects-btn"
+              id="contact-phone-btn"
             >
-              <GitHubIcon />
-              <HoverScrambleText text="View Projects" />
+              <PhoneIcon />
+              <HoverScrambleText text="Call: +880 1315 186694" />
             </a>
 
             <a
-              href="https://www.linkedin.com/in/jonathan-jesni/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-link"
-              id="contact-linkedin-btn"
-            >
-              <LinkedInIcon />
-              <HoverScrambleText text="Connect on LinkedIn" />
-            </a>
-
-            <a
-              href="/assets/Jonathan_Resume.pdf"
+              href="/assets/Abdus_Sami_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"

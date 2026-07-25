@@ -18,18 +18,18 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 // while BioWords still splits the rest at the word level.
 const BIO_PARAGRAPHS = [
   <>
-    I&apos;m a final-year Computer Science student at IIIT Pune who builds real tools, not just
-    coursework. My focus areas are <strong>AI/ML</strong>, <strong>computer vision</strong>, and{" "}
-    <strong>systems design</strong>, and I gravitate toward projects that solve practical, tangible
-    problems.
+    I&apos;m a backend developer specializing in <strong>Python</strong>, <strong>Django</strong>,{" "}
+    <strong>Django REST Framework</strong>, and <strong>PostgreSQL</strong>, with practical experience
+    building production-ready backend systems that solve real problems.
   </>,
   <>
-    Whether it&apos;s training a dual-stacked U-Net for medical image segmentation, generating
-    synthetic disaster scene data in Blender, or engineering a deterministic document converter, I focus
-    on software that <strong>works in the real world</strong>.
+    As a <strong>freelance backend developer</strong>, I build secure REST APIs with JWT authentication
+    and role-based access control, design relational PostgreSQL databases, and deploy applications on
+    Linux servers using <strong>Docker</strong>, <strong>Gunicorn</strong>, and <strong>NGINX</strong>.
   </>,
   <>
-    Final-year CS @ IIIT Pune (Class of 2027) · open to <strong>Junior AI/ML roles &amp; internships</strong>.
+    <strong>BSc in Computer Science &amp; Engineering</strong>, Daffodil International University (CGPA 3.80).
+    I enjoy building scalable backend architectures and clean APIs following industry best practices.
   </>,
 ];
 

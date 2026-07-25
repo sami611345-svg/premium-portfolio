@@ -20,23 +20,23 @@ function JsonOutput() {
     <pre className="term-output">
       <G>{'{'}</G>{
         '\n'}
-      {'  '}<span className="term-key">&quot;current&quot;</span><G>{': '}</G><span className="term-str">&quot;B.Tech CSE, IIIT Pune&quot;</span><G>{','}</G>{
+      {'  '}<span className="term-key">&quot;role&quot;</span><G>{': '}</G><span className="term-str">&quot;Cloud Native Backend Engineer&quot;</span><G>{','}</G>{
         '\n'}
-      {'  '}<span className="term-key">&quot;year&quot;</span><G>{': '}</G><span className="term-str">&quot;Final Year&quot;</span><G>{','}</G>{
+      {'  '}<span className="term-key">&quot;education&quot;</span><G>{': '}</G><span className="term-str">&quot;BSc CSE, Daffodil International University&quot;</span><G>{','}</G>{
         '\n'}
-      {'  '}<span className="term-key">&quot;location&quot;</span><G>{': '}</G><span className="term-str">&quot;Pune, India / Muscat, Oman&quot;</span><G>{','}</G>{
+      {'  '}<span className="term-key">&quot;location&quot;</span><G>{': '}</G><span className="term-str">&quot;Bangladesh&quot;</span><G>{','}</G>{
         '\n'}
-      {'  '}<span className="term-key">&quot;focus&quot;</span><G>{': ['}</G>{
+      {'  '}<span className="term-key">&quot;stack&quot;</span><G>{': ['}</G>{
         '\n'}
-      {'    '}<span className="term-str">&quot;AI/ML&quot;</span><G>{','}</G>{
+      {'    '}<span className="term-str">&quot;Django / DRF&quot;</span><G>{','}</G>{
         '\n'}
-      {'    '}<span className="term-str">&quot;Computer Vision&quot;</span><G>{','}</G>{
+      {'    '}<span className="term-str">&quot;PostgreSQL&quot;</span><G>{','}</G>{
         '\n'}
-      {'    '}<span className="term-str">&quot;Systems&quot;</span>{
+      {'    '}<span className="term-str">&quot;Docker / AWS&quot;</span>{
         '\n'}
       {'  '}<G>{'],'}</G>{
         '\n'}
-      {'  '}<span className="term-key">&quot;status&quot;</span><G>{': '}</G><span className="term-str">&quot;open to internships&quot;</span>{
+      {'  '}<span className="term-key">&quot;status&quot;</span><G>{': '}</G><span className="term-str">&quot;available for backend roles&quot;</span>{
         '\n'}
       <G>{'}'}</G>
     </pre>
@@ -119,7 +119,7 @@ export default function TerminalBlock() {
             <span className="term-dot term-dot--yellow" />
             <span className="term-dot term-dot--green" />
           </div>
-          <span className="term-title">guest@jonathan: ~</span>
+          <span className="term-title">guest@abdus: ~</span>
         </div>
 
         {/* ---- Body ---- */}
